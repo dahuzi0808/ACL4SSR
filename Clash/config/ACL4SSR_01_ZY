@@ -1,0 +1,70 @@
+[custom]
+;不要随意改变关键字，否则会导致出错
+;acl4SSR规则
+
+;去广告：支持
+;自动测速：支持
+;微软分流：支持
+;苹果分流：支持
+;增强中国IP段：不支持
+;增强国外GFW：不支持
+
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/dahuzi0808/AAAA/refs/heads/main/Zycn.yaml
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/dler-io/Rules/refs/heads/main/Clash/Provider/Special.yaml
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/UnBan.yaml
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/LocalAreaNetwork.yaml
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/GoogleCN.yaml
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/SteamCN.yaml
+ruleset=🤖 自用,clash-classic:https://raw.githubusercontent.com/dahuzi0808/AAAA/refs/heads/main/Zyp.yaml
+ruleset=🤖 github,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Github.yaml
+ruleset=🎮 STEAM,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Steam.yaml
+ruleset=🍀 Google,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+ruleset=📹 YouTube,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/YouTube.yaml
+ruleset=Ⓜ️ BING,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+ruleset=Ⓜ️ 微软服务,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Microsoft.yaml
+ruleset=🍎 苹果服务,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Apple.yaml
+ruleset=🌍 国外媒体,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ProxyMedia.yaml
+ruleset=📲 电报信息,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Telegram.yaml
+ruleset=🎵 TikTok,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/TikTok.yaml
+ruleset=🚀 节点选择,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ProxyLite.yaml
+ruleset=🚀 节点选择,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ProxyGFWlist.yaml
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ChinaDomain.yaml
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ChinaCompanyIp.yaml
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/China/China_Classical.yaml
+;ruleset=🎯 全球直连,[]GEOIP,LAN
+ruleset=🎯 全球直连,[]GEOSITE,CN
+ruleset=🚀 节点选择,[]GEOSITE,geolocation-!cn
+ruleset=🎯 全球直连,[]GEOIP,CN
+ruleset=🐟 漏网之鱼,[]FINAL
+
+custom_proxy_group=🚀 节点选择`select`[]DIRECT`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`.*
+;custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🤖 自用`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=🌍 国外媒体`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=🤖 github`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=📲 电报信息`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=Ⓜ️ BING`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=Ⓜ️ 微软服务`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=🍀 Google`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=🎵 TikTok`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=📹 YouTube`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=🎮 STEAM`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=🍎 苹果服务`select`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动`[]DIRECT
+custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]🚀 节点选择`[]🇭🇰 香港均衡`[]🇭🇰 香港自动`[]🇹🇼 台湾均衡`[]🇹🇼 台湾自动`[]🇯🇵 日本均衡`[]🇯🇵 日本自动`[]🇰🇷 韩国均衡`[]🇰🇷 韩国自动`[]🇸🇬 新加坡均衡`[]🇸🇬 新加坡自动`[]🇺🇸 北美均衡`[]🇺🇸 北美自动
+custom_proxy_group=🐟 漏网之鱼`select`[]DIRECT`[]🎯 全球直连
+custom_proxy_group=🇭🇰 香港均衡`load-balance`(香港|HK|hk)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇭🇰 香港自动`url-test`(香港|HK|hk)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇹🇼 台湾均衡`load-balance`(台湾|TW|tw)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇹🇼 台湾自动`url-test`(台湾|TW|tw)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇯🇵 日本均衡`load-balance`(日本|联通|移动|电信JP|jp)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇯🇵 日本自动`url-test`(日本|JP|jp)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇰🇷 韩国均衡`load-balance`(韩国|KR|kr)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇰🇷 韩国自动`url-test`(韩国|KR|kr)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇸🇬 新加坡均衡`load-balance`(新加坡|SG|sg)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇸🇬 新加坡自动`url-test`(新加坡|SG|sg)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇺🇸 北美均衡`load-balance`(美国|加拿大|USA|usa|US|us)`http://www.gstatic.com/generate_204`120,,100
+custom_proxy_group=🇺🇸 北美自动`url-test`(美国|加拿大|USA|usa|US|us)`http://www.gstatic.com/generate_204`120,,100
+
+
+enable_rule_generator=true
+overwrite_original_rules=true
